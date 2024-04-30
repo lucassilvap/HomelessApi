@@ -1,5 +1,6 @@
 package com.apimoradoresderua.homeless.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import com.apimoradoresderua.homeless.entity.HomelessPersonEntity;
+import com.apimoradoresderua.homeless.exception.AgeBetwennMustBeWithTwotFoundException;
 import com.apimoradoresderua.homeless.exception.HomelessNotFoundException;
 import com.apimoradoresderua.homeless.exception.NameMustBeUniqueException;
 import com.apimoradoresderua.homeless.pageOptions.PageCreate;
@@ -41,13 +43,23 @@ public class HomelessService {
 	}
 	
 	 public Page<HomelessPersonEntity> findALLHomeless(Optional<String> partName, Optional<Integer> page, Optional<Integer> size, 
-		 Optional<String> currentSituation ) {
-		 Page<HomelessPersonEntity> homelessPage = homelessRepository.findAll(HomelessSpecification
-				 .spec(partName,currentSituation),
-		 pageCreate.build(page,size));
+		 Optional<String> currentSituation, Optional<Integer> age, Optional<List<Integer>> ageBetween) {
+		 ageBetweenIsValid(ageBetween);
+		 Page<HomelessPersonEntity> homelessPage = homelessRepository.findAll(
+		 HomelessSpecification.spec(partName,currentSituation, age, ageBetween), pageCreate.build(page,size));
+		 
 		 if (!homelessPage.isEmpty())
 		 logger.info("homeless person successfully found!");
 	     return homelessPage;
 	 }
-
+	 
+	 public void ageBetweenIsValid(Optional<List<Integer>> ageOptional) {
+			if(ageOptional.isPresent()) {
+				if (ageOptional.get().size() == 2) {
+			        return; 		
+				}else {
+					throw new AgeBetwennMustBeWithTwotFoundException();
+				}
+			}
+	 }
 }

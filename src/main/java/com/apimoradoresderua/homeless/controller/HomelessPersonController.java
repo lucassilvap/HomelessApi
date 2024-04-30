@@ -1,8 +1,6 @@
 package com.apimoradoresderua.homeless.controller;
+import java.util.List;
 import java.util.Optional;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,13 +30,15 @@ public class HomelessPersonController {
 	}
 	
 	@GetMapping
-	public ResponseEntity<?> find(@RequestParam(required = true, name="partName") 
-	    Optional<String> partName, @RequestParam(required = true, name ="page") Optional<Integer> page, 
+	public ResponseEntity<?> find( @RequestParam(required = true, name="partName") Optional<String> partName,
+		@RequestParam(required = true, name ="page") Optional<Integer> page, 
 	    @RequestParam(required = true, name = "size") Optional<Integer> size, 
-	    @RequestParam(required = true, name = "currentSituation")
-	    Optional<String> currentSituation){
+	    @RequestParam(required = true, name = "currentSituation") Optional<String> currentSituation,
+	    @RequestParam(required = true, name = "ageGreaterThan") Optional<Integer> age, 
+	    @RequestParam(required = true, name = "ageBetween") Optional<List<Integer>> ageBetween){
+		
 		return ResponseEntity.ok(homelessModelMaper.entityPageToDtoPage(homelessService.
-		findALLHomeless(partName, page, size, currentSituation)));
+		findALLHomeless(partName, page, size, currentSituation, age, ageBetween)));
 	}
 	
 	@PostMapping

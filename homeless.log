@@ -1,108 +1,563 @@
-2024-04-29T21:06:37.109-03:00  INFO 10512 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 10512 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
-2024-04-29T21:06:37.115-03:00  INFO 10512 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-04-29T21:06:38.520-03:00  INFO 10512 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-29T21:06:38.708-03:00  INFO 10512 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 1 JPA repository interface.
-2024-04-29T21:06:39.786-03:00  INFO 10512 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
-2024-04-29T21:06:39.808-03:00  INFO 10512 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-29T21:06:39.808-03:00  INFO 10512 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-04-29T21:06:39.903-03:00  INFO 10512 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-29T21:06:39.904-03:00  INFO 10512 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2680 ms
-2024-04-29T21:06:39.954-03:00  INFO 10512 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-29T21:06:40.215-03:00  INFO 10512 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-04-29T21:06:40.219-03:00  INFO 10512 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-29T21:06:40.235-03:00  INFO 10512 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
-2024-04-29T21:06:40.452-03:00  INFO 10512 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-29T21:06:40.574-03:00  INFO 10512 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-29T21:06:40.649-03:00  INFO 10512 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-29T21:06:41.227-03:00  INFO 10512 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-29T21:06:42.895-03:00  INFO 10512 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-29T21:06:42.925-03:00 DEBUG 10512 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), current_situation varchar(255), name varchar(255), primary key (id))
-2024-04-29T21:06:42.936-03:00 DEBUG 10512 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
-2024-04-29T21:06:42.940-03:00  INFO 10512 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-29T21:06:43.654-03:00  WARN 10512 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-29T21:06:44.484-03:00  INFO 10512 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
-2024-04-29T21:06:44.507-03:00  INFO 10512 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 8.478 seconds (process running for 9.276)
-2024-04-29T21:07:11.211-03:00  INFO 13228 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 13228 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
-2024-04-29T21:07:11.216-03:00  INFO 13228 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-04-29T21:07:12.860-03:00  INFO 13228 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-29T21:07:13.055-03:00  INFO 13228 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 1 JPA repository interface.
-2024-04-29T21:07:14.577-03:00  INFO 13228 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
-2024-04-29T21:07:14.603-03:00  INFO 13228 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-29T21:07:14.603-03:00  INFO 13228 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-04-29T21:07:14.736-03:00  INFO 13228 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-29T21:07:14.737-03:00  INFO 13228 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3388 ms
-2024-04-29T21:07:14.803-03:00  INFO 13228 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-29T21:07:15.365-03:00  INFO 13228 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-04-29T21:07:15.380-03:00  INFO 13228 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-29T21:07:15.424-03:00  INFO 13228 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
-2024-04-29T21:07:15.879-03:00  INFO 13228 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-29T21:07:16.166-03:00  INFO 13228 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-29T21:07:16.263-03:00  INFO 13228 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-29T21:07:16.783-03:00  INFO 13228 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-29T21:07:18.186-03:00  INFO 13228 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-29T21:07:18.218-03:00 DEBUG 13228 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), current_situation varchar(255), name varchar(255), primary key (id))
-2024-04-29T21:07:18.233-03:00 DEBUG 13228 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
-2024-04-29T21:07:18.237-03:00  INFO 13228 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-29T21:07:18.885-03:00  WARN 13228 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-29T21:07:19.626-03:00  INFO 13228 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
-2024-04-29T21:07:19.646-03:00  INFO 13228 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 9.383 seconds (process running for 9.994)
-2024-04-29T21:08:18.925-03:00  INFO 9132 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 9132 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
-2024-04-29T21:08:18.929-03:00  INFO 9132 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-04-29T21:08:20.140-03:00  INFO 9132 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-29T21:08:20.303-03:00  INFO 9132 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interface.
-2024-04-29T21:08:21.355-03:00  INFO 9132 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
-2024-04-29T21:08:21.379-03:00  INFO 9132 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-29T21:08:21.380-03:00  INFO 9132 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-04-29T21:08:21.489-03:00  INFO 9132 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-29T21:08:21.490-03:00  INFO 9132 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2458 ms
-2024-04-29T21:08:21.546-03:00  INFO 9132 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-29T21:08:21.893-03:00  INFO 9132 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-04-29T21:08:21.897-03:00  INFO 9132 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-29T21:08:21.917-03:00  INFO 9132 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
-2024-04-29T21:08:22.166-03:00  INFO 9132 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-29T21:08:22.277-03:00  INFO 9132 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-29T21:08:22.334-03:00  INFO 9132 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-29T21:08:22.796-03:00  INFO 9132 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-29T21:08:24.194-03:00  INFO 9132 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-29T21:08:24.224-03:00 DEBUG 9132 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), current_situation varchar(255), name varchar(255), primary key (id))
-2024-04-29T21:08:24.237-03:00 DEBUG 9132 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
-2024-04-29T21:08:24.242-03:00  INFO 9132 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-29T21:08:25.057-03:00  WARN 9132 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-29T21:08:25.782-03:00  INFO 9132 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
-2024-04-29T21:08:25.803-03:00  INFO 9132 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 7.595 seconds (process running for 8.132)
-2024-04-29T21:09:12.958-03:00  INFO 4300 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 4300 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
-2024-04-29T21:09:12.968-03:00  INFO 4300 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-04-29T21:09:14.323-03:00  INFO 4300 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-29T21:09:14.474-03:00  INFO 4300 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interface.
-2024-04-29T21:09:15.779-03:00  INFO 4300 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
-2024-04-29T21:09:15.802-03:00  INFO 4300 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-29T21:09:15.802-03:00  INFO 4300 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-04-29T21:09:15.902-03:00  INFO 4300 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-29T21:09:15.903-03:00  INFO 4300 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2832 ms
-2024-04-29T21:09:16.021-03:00  INFO 4300 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-29T21:09:16.602-03:00  INFO 4300 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-04-29T21:09:16.613-03:00  INFO 4300 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-29T21:09:16.647-03:00  INFO 4300 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
-2024-04-29T21:09:17.518-03:00  INFO 4300 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-29T21:09:17.702-03:00  INFO 4300 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-29T21:09:17.927-03:00  INFO 4300 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-29T21:09:18.696-03:00  INFO 4300 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-29T21:09:20.174-03:00  INFO 4300 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-29T21:09:20.208-03:00 DEBUG 4300 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), current_situation varchar(255), name varchar(255), primary key (id))
-2024-04-29T21:09:20.221-03:00 DEBUG 4300 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
-2024-04-29T21:09:20.225-03:00  INFO 4300 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-29T21:09:20.843-03:00  WARN 4300 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-29T21:09:21.560-03:00  INFO 4300 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
-2024-04-29T21:09:21.584-03:00  INFO 4300 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 9.391 seconds (process running for 10.039)
-2024-04-29T21:10:13.533-03:00  INFO 4300 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-29T21:10:13.534-03:00  INFO 4300 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-29T21:10:13.538-03:00  INFO 4300 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-04-29T21:10:13.894-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
-2024-04-29T21:10:13.909-03:00  INFO 4300 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully created!
-2024-04-29T21:10:13.930-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
-2024-04-29T21:10:13.964-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,current_situation,name,id) values (?,?,?,?)
-2024-04-29T21:11:38.924-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? offset ? rows fetch first ? rows only
-2024-04-29T21:11:48.097-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? offset ? rows fetch first ? rows only
-2024-04-29T21:11:51.111-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-5] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? offset ? rows fetch first ? rows only
-2024-04-29T21:11:55.506-03:00 DEBUG 4300 --- [moradoresderua] [http-nio-8084-exec-6] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
-2024-04-29T21:11:55.512-03:00  INFO 4300 --- [moradoresderua] [http-nio-8084-exec-6] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:18:11.455-03:00  INFO 10792 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 10792 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T09:18:11.490-03:00  INFO 10792 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T09:18:13.197-03:00  INFO 10792 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T09:18:13.387-03:00  INFO 10792 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 1 JPA repository interface.
+2024-04-30T09:18:15.316-03:00  INFO 10792 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T09:18:15.358-03:00  INFO 10792 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T09:18:15.359-03:00  INFO 10792 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T09:18:15.515-03:00  INFO 10792 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T09:18:15.516-03:00  INFO 10792 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3914 ms
+2024-04-30T09:18:15.617-03:00  INFO 10792 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T09:18:16.102-03:00  INFO 10792 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T09:18:16.105-03:00  INFO 10792 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T09:18:16.137-03:00  INFO 10792 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T09:18:16.490-03:00  INFO 10792 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T09:18:16.659-03:00  INFO 10792 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T09:18:16.796-03:00  INFO 10792 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T09:18:17.431-03:00  INFO 10792 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T09:18:19.305-03:00  INFO 10792 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T09:18:19.350-03:00 DEBUG 10792 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T09:18:19.366-03:00 DEBUG 10792 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T09:18:19.373-03:00  INFO 10792 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T09:18:20.252-03:00  WARN 10792 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T09:18:21.486-03:00  INFO 10792 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T09:18:21.510-03:00  INFO 10792 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 10.814 seconds (process running for 11.391)
+2024-04-30T09:19:24.473-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T09:19:24.473-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T09:19:24.475-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-30T09:19:24.870-03:00 DEBUG 10792 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T09:19:24.884-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully created!
+2024-04-30T09:19:24.910-03:00 DEBUG 10792 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
+2024-04-30T09:19:24.952-03:00 DEBUG 10792 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,age,current_situation,name,id) values (?,?,?,?,?)
+2024-04-30T09:19:29.635-03:00 DEBUG 10792 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age>? offset ? rows fetch first ? rows only
+2024-04-30T09:19:29.645-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-2] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:19:41.233-03:00 DEBUG 10792 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age>? offset ? rows fetch first ? rows only
+2024-04-30T09:19:41.234-03:00  INFO 10792 --- [moradoresderua] [http-nio-8084-exec-3] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:31:28.728-03:00  INFO 1688 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 1688 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T09:31:28.733-03:00  INFO 1688 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T09:31:30.586-03:00  INFO 1688 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T09:31:30.821-03:00  INFO 1688 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207 ms. Found 1 JPA repository interface.
+2024-04-30T09:31:32.361-03:00  INFO 1688 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T09:31:32.388-03:00  INFO 1688 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T09:31:32.390-03:00  INFO 1688 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T09:31:32.497-03:00  INFO 1688 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T09:31:32.498-03:00  INFO 1688 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3597 ms
+2024-04-30T09:31:32.579-03:00  INFO 1688 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T09:31:33.099-03:00  INFO 1688 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T09:31:33.104-03:00  INFO 1688 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T09:31:33.135-03:00  INFO 1688 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T09:31:33.477-03:00  INFO 1688 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T09:31:33.632-03:00  INFO 1688 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T09:31:33.710-03:00  INFO 1688 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T09:31:34.413-03:00  INFO 1688 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T09:31:36.119-03:00  INFO 1688 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T09:31:36.157-03:00 DEBUG 1688 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T09:31:36.170-03:00 DEBUG 1688 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T09:31:36.175-03:00  INFO 1688 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T09:31:37.033-03:00  WARN 1688 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T09:31:38.493-03:00  INFO 1688 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T09:31:38.514-03:00  INFO 1688 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 10.783 seconds (process running for 11.488)
+2024-04-30T09:32:35.659-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T09:32:35.660-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T09:32:35.662-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-30T09:32:35.952-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:32:43.688-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T09:32:43.691-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-2] c.a.homeless.service.HomelessService     : homeless person successfully created!
+2024-04-30T09:32:43.699-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
+2024-04-30T09:32:43.732-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,age,current_situation,name,id) values (?,?,?,?,?)
+2024-04-30T09:32:50.091-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:32:50.100-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:32:55.751-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:32:55.752-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-4] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:33:00.367-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-5] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:33:00.368-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-5] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:33:21.983-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-6] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:33:21.984-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-6] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:33:31.020-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-7] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:33:31.023-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-7] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:33:50.999-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-8] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:33:51.000-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-8] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:33:57.231-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-9] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:33:57.232-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-9] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:34:12.240-03:00 DEBUG 1688 --- [moradoresderua] [http-nio-8084-exec-10] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:34:12.244-03:00  INFO 1688 --- [moradoresderua] [http-nio-8084-exec-10] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T09:35:01.767-03:00  INFO 13064 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 13064 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T09:35:01.773-03:00  INFO 13064 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T09:35:03.057-03:00  INFO 13064 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T09:35:03.192-03:00  INFO 13064 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
+2024-04-30T09:35:04.230-03:00  INFO 13064 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T09:35:04.257-03:00  INFO 13064 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T09:35:04.258-03:00  INFO 13064 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T09:35:04.373-03:00  INFO 13064 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T09:35:04.374-03:00  INFO 13064 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2500 ms
+2024-04-30T09:35:04.438-03:00  INFO 13064 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T09:35:04.790-03:00  INFO 13064 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T09:35:04.805-03:00  INFO 13064 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T09:35:04.824-03:00  INFO 13064 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T09:35:05.053-03:00  INFO 13064 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T09:35:05.166-03:00  INFO 13064 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T09:35:05.235-03:00  INFO 13064 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T09:35:05.735-03:00  INFO 13064 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T09:35:07.069-03:00  INFO 13064 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T09:35:07.099-03:00 DEBUG 13064 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T09:35:07.111-03:00 DEBUG 13064 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T09:35:07.116-03:00  INFO 13064 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T09:35:07.862-03:00  WARN 13064 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T09:35:08.474-03:00  INFO 13064 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T09:35:08.494-03:00  INFO 13064 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 7.573 seconds (process running for 8.177)
+2024-04-30T09:35:57.317-03:00  INFO 13064 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T09:35:57.317-03:00  INFO 13064 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T09:35:57.323-03:00  INFO 13064 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-04-30T09:35:57.531-03:00 DEBUG 13064 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:36:03.831-03:00 DEBUG 13064 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T09:41:16.092-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 9628 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T09:41:16.097-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T09:41:17.349-03:00  INFO 9628 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T09:41:17.506-03:00  INFO 9628 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2024-04-30T09:41:18.614-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T09:41:18.642-03:00  INFO 9628 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T09:41:18.642-03:00  INFO 9628 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T09:41:18.737-03:00  INFO 9628 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T09:41:18.738-03:00  INFO 9628 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2545 ms
+2024-04-30T09:41:18.798-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T09:41:19.070-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T09:41:19.073-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T09:41:19.089-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T09:41:19.320-03:00  INFO 9628 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T09:41:19.443-03:00  INFO 9628 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T09:41:19.513-03:00  INFO 9628 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T09:41:19.933-03:00  INFO 9628 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T09:41:21.282-03:00  INFO 9628 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T09:41:21.315-03:00 DEBUG 9628 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T09:41:21.328-03:00 DEBUG 9628 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T09:41:21.332-03:00  INFO 9628 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T09:41:21.965-03:00  WARN 9628 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T09:41:22.645-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T09:41:22.662-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 7.244 seconds (process running for 7.878)
+2024-04-30T09:41:47.179-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T09:41:47.179-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T09:41:47.181-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-30T09:41:47.512-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name) like ? escape '' offset ? rows fetch first ? rows only
+2024-04-30T10:09:10.053-03:00  INFO 6944 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 6944 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T10:09:10.062-03:00  INFO 6944 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T10:09:11.382-03:00  INFO 6944 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T10:09:11.557-03:00  INFO 6944 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2024-04-30T10:09:12.671-03:00  INFO 6944 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T10:09:12.701-03:00  INFO 6944 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T10:09:12.702-03:00  INFO 6944 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T10:09:12.812-03:00  INFO 6944 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T10:09:12.812-03:00  INFO 6944 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2634 ms
+2024-04-30T10:09:12.887-03:00  INFO 6944 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T10:09:13.206-03:00  INFO 6944 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T10:09:13.209-03:00  INFO 6944 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T10:09:13.231-03:00  INFO 6944 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T10:09:13.517-03:00  INFO 6944 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T10:09:13.674-03:00  INFO 6944 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T10:09:13.753-03:00  INFO 6944 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T10:09:14.394-03:00  INFO 6944 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T10:09:15.803-03:00  INFO 6944 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T10:09:15.834-03:00 DEBUG 6944 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T10:09:15.870-03:00 DEBUG 6944 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T10:09:15.879-03:00  INFO 6944 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T10:09:16.475-03:00  WARN 6944 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T10:09:17.284-03:00  INFO 6944 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T10:09:17.304-03:00  INFO 6944 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 7.983 seconds (process running for 8.671)
+2024-04-30T10:09:41.267-03:00  INFO 6944 --- [moradoresderua] [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T10:09:41.267-03:00  INFO 6944 --- [moradoresderua] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T10:09:41.271-03:00  INFO 6944 --- [moradoresderua] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-30T10:09:41.332-03:00 ERROR 6944 --- [moradoresderua] [http-nio-8084-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.apimoradoresderua.homeless.controller.HomelessPersonController.find(HomelessPersonController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-04-30T10:09:59.395-03:00 DEBUG 6944 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:24:33.294-03:00 DEBUG 6944 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:27:37.258-03:00  INFO 10684 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 10684 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T10:27:37.267-03:00  INFO 10684 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T10:27:38.467-03:00  INFO 10684 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T10:27:38.594-03:00  INFO 10684 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-04-30T10:27:39.671-03:00  INFO 10684 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T10:27:39.695-03:00  INFO 10684 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T10:27:39.702-03:00  INFO 10684 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T10:27:39.864-03:00  INFO 10684 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T10:27:39.865-03:00  INFO 10684 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2504 ms
+2024-04-30T10:27:39.928-03:00  INFO 10684 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T10:27:40.268-03:00  INFO 10684 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T10:27:40.275-03:00  INFO 10684 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T10:27:40.294-03:00  INFO 10684 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T10:27:40.544-03:00  INFO 10684 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T10:27:40.654-03:00  INFO 10684 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T10:27:40.712-03:00  INFO 10684 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T10:27:41.134-03:00  INFO 10684 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T10:27:43.126-03:00  INFO 10684 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T10:27:43.177-03:00 DEBUG 10684 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T10:27:43.190-03:00 DEBUG 10684 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T10:27:43.195-03:00  INFO 10684 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T10:27:44.314-03:00  WARN 10684 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T10:27:45.586-03:00  INFO 10684 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T10:27:45.608-03:00  INFO 10684 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 9.005 seconds (process running for 9.585)
+2024-04-30T10:30:16.274-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T10:30:16.274-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T10:30:16.277-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-30T10:30:16.673-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T10:30:16.686-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully created!
+2024-04-30T10:30:16.703-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
+2024-04-30T10:30:16.742-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,age,current_situation,name,id) values (?,?,?,?,?)
+2024-04-30T10:30:26.109-03:00 ERROR 10684 --- [moradoresderua] [http-nio-8084-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.apimoradoresderua.homeless.controller.HomelessPersonController.find(HomelessPersonController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-04-30T10:30:40.374-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:30:40.387-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-3] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:30:46.370-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:30:50.409-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-5] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:30:50.411-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-5] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:31:15.727-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-6] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? and hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:31:15.729-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-6] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:31:24.334-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-7] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? and hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:31:28.731-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-8] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? and hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:31:28.732-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-8] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:34:42.570-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-10] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? offset ? rows fetch first ? rows only
+2024-04-30T10:34:42.572-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-10] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:34:44.943-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.current_situation)=? offset ? rows fetch first ? rows only
+2024-04-30T10:34:44.944-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:34:53.570-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:34:53.571-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-2] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:35:09.555-03:00 ERROR 10684 --- [moradoresderua] [http-nio-8084-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.apimoradoresderua.homeless.controller.HomelessPersonController.find(HomelessPersonController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-04-30T10:35:13.118-03:00 ERROR 10684 --- [moradoresderua] [http-nio-8084-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.apimoradoresderua.homeless.controller.HomelessPersonController.find(HomelessPersonController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-04-30T10:35:24.539-03:00 ERROR 10684 --- [moradoresderua] [http-nio-8084-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.apimoradoresderua.homeless.controller.HomelessPersonController.find(HomelessPersonController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-04-30T10:35:26.997-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-6] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:35:26.998-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-6] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:37:37.085-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-8] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T10:37:40.857-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-9] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T10:37:40.859-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-9] c.a.homeless.service.HomelessService     : homeless person successfully created!
+2024-04-30T10:37:40.860-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-9] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
+2024-04-30T10:37:40.861-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-9] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,age,current_situation,name,id) values (?,?,?,?,?)
+2024-04-30T10:37:49.715-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-10] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:37:49.717-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-10] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:38:00.054-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:38:00.056-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-1] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:38:16.084-03:00 DEBUG 10684 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:38:16.086-03:00  INFO 10684 --- [moradoresderua] [http-nio-8084-exec-2] c.a.homeless.service.HomelessService     : homeless person successfully found!
+2024-04-30T10:45:49.576-03:00  INFO 15256 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 15256 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T10:45:49.586-03:00  INFO 15256 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T10:45:51.247-03:00  INFO 15256 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T10:45:51.374-03:00  INFO 15256 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2024-04-30T10:45:52.600-03:00  INFO 15256 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T10:45:52.633-03:00  INFO 15256 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T10:45:52.634-03:00  INFO 15256 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T10:45:52.767-03:00  INFO 15256 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T10:45:52.768-03:00  INFO 15256 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3071 ms
+2024-04-30T10:45:52.841-03:00  INFO 15256 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T10:45:53.293-03:00  INFO 15256 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T10:45:53.300-03:00  INFO 15256 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T10:45:53.327-03:00  INFO 15256 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T10:45:53.761-03:00  INFO 15256 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T10:45:53.905-03:00  INFO 15256 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T10:45:53.981-03:00  INFO 15256 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T10:45:54.492-03:00  INFO 15256 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T10:45:56.495-03:00  INFO 15256 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T10:45:56.547-03:00 DEBUG 15256 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T10:45:56.568-03:00 DEBUG 15256 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T10:45:56.578-03:00  INFO 15256 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T10:45:57.334-03:00  WARN 15256 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T10:45:57.982-03:00  INFO 15256 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T10:45:58.004-03:00  INFO 15256 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 9.429 seconds (process running for 10.819)
+2024-04-30T10:46:19.718-03:00  INFO 15256 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T10:46:19.719-03:00  INFO 15256 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T10:46:19.725-03:00  INFO 15256 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-04-30T10:46:20.117-03:00 DEBUG 15256 --- [moradoresderua] [http-nio-8084-exec-1] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:46:29.864-03:00 DEBUG 15256 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 offset ? rows fetch first ? rows only
+2024-04-30T10:47:21.351-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Starting MoradoresderuaApplication using Java 21.0.3 with PID 9628 (C:\Users\T-Gamer\Desktop\moradoresderua\target\classes started by T-Gamer in C:\Users\T-Gamer\Desktop\moradoresderua)
+2024-04-30T10:47:21.358-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-30T10:47:22.922-03:00  INFO 9628 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-30T10:47:23.059-03:00  INFO 9628 --- [moradoresderua] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2024-04-30T10:47:24.435-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-04-30T10:47:24.461-03:00  INFO 9628 --- [moradoresderua] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-30T10:47:24.462-03:00  INFO 9628 --- [moradoresderua] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-30T10:47:24.591-03:00  INFO 9628 --- [moradoresderua] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-30T10:47:24.592-03:00  INFO 9628 --- [moradoresderua] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3112 ms
+2024-04-30T10:47:24.684-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-30T10:47:25.139-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-04-30T10:47:25.145-03:00  INFO 9628 --- [moradoresderua] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-30T10:47:25.172-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-30T10:47:25.566-03:00  INFO 9628 --- [moradoresderua] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-30T10:47:25.730-03:00  INFO 9628 --- [moradoresderua] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-30T10:47:25.828-03:00  INFO 9628 --- [moradoresderua] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-30T10:47:26.377-03:00  INFO 9628 --- [moradoresderua] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-30T10:47:28.320-03:00  INFO 9628 --- [moradoresderua] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-30T10:47:28.407-03:00 DEBUG 9628 --- [moradoresderua] [main] org.hibernate.SQL                        : create table homeless_person_entity (id bigint not null, address_where_you_are varchar(255), age integer not null, current_situation varchar(255), name varchar(255), primary key (id))
+2024-04-30T10:47:28.427-03:00 DEBUG 9628 --- [moradoresderua] [main] org.hibernate.SQL                        : create sequence homeless_person_entity_seq start with 1 increment by 50
+2024-04-30T10:47:28.437-03:00  INFO 9628 --- [moradoresderua] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-30T10:47:29.237-03:00  WARN 9628 --- [moradoresderua] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-30T10:47:29.886-03:00  INFO 9628 --- [moradoresderua] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2024-04-30T10:47:29.904-03:00  INFO 9628 --- [moradoresderua] [main] c.a.homeless.MoradoresderuaApplication   : Started MoradoresderuaApplication in 9.566 seconds (process running for 10.534)
+2024-04-30T10:48:05.929-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30T10:48:05.930-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-30T10:48:05.933-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-30T10:56:12.179-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-2] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:56:17.682-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where upper(hpe1_0.name)=upper(?)
+2024-04-30T10:56:17.688-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-3] c.a.homeless.service.HomelessService     : homeless person successfully created!
+2024-04-30T10:56:17.697-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : select next value for homeless_person_entity_seq
+2024-04-30T10:56:17.735-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-3] org.hibernate.SQL                        : insert into homeless_person_entity (address_where_you_are,age,current_situation,name,id) values (?,?,?,?,?)
+2024-04-30T10:56:26.722-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-4] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:56:36.424-03:00 DEBUG 9628 --- [moradoresderua] [http-nio-8084-exec-5] org.hibernate.SQL                        : select hpe1_0.id,hpe1_0.address_where_you_are,hpe1_0.age,hpe1_0.current_situation,hpe1_0.name from homeless_person_entity hpe1_0 where hpe1_0.age between ? and ? offset ? rows fetch first ? rows only
+2024-04-30T10:56:36.442-03:00  INFO 9628 --- [moradoresderua] [http-nio-8084-exec-5] c.a.homeless.service.HomelessService     : homeless person successfully found!
