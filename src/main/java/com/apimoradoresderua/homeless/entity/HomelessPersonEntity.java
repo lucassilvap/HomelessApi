@@ -1,9 +1,13 @@
 package com.apimoradoresderua.homeless.entity;
 
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class HomelessPersonEntity {
@@ -12,13 +16,8 @@ public class HomelessPersonEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	public Long getId() {
-		return id;
-	}
-	
-	public void setId(Long id) {
-		this.id = id;
-	}
+	@OneToMany(cascade = CascadeType.ALL)
+	private List<ParentsTelephone> parentsTelephones;
 	
 	private String name;
 	
@@ -27,6 +26,14 @@ public class HomelessPersonEntity {
 	private String addressWhereYouAre;
 	
 	private int age;
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 	public int getAge() {
 		return age;
@@ -56,5 +63,13 @@ public class HomelessPersonEntity {
 	
 	public void setAddressWhereYouAre(String addressWhereYouAre) {
 		this.addressWhereYouAre = addressWhereYouAre;
+	}
+	
+	public List<ParentsTelephone> getParentsTelephones() {
+		return parentsTelephones;
+	}
+	
+	public void setParentsTelephones(List<ParentsTelephone> parentsTelephones) {
+		this.parentsTelephones = parentsTelephones;
 	}
 }

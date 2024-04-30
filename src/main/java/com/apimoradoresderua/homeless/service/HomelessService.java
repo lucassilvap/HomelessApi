@@ -43,10 +43,10 @@ public class HomelessService {
 	}
 	
 	 public Page<HomelessPersonEntity> findALLHomeless(Optional<String> partName, Optional<Integer> page, Optional<Integer> size, 
-		 Optional<String> currentSituation, Optional<Integer> age, Optional<List<Integer>> ageBetween) {
+		 Optional<String> currentSituation, Optional<Integer> age, Optional<List<Integer>> ageBetween, Optional<List<Integer>> ageInList) {
 		 ageBetweenIsValid(ageBetween);
 		 Page<HomelessPersonEntity> homelessPage = homelessRepository.findAll(
-		 HomelessSpecification.spec(partName,currentSituation, age, ageBetween), pageCreate.build(page,size));
+		 HomelessSpecification.spec(partName,currentSituation, age, ageBetween, ageInList), pageCreate.build(page,size));
 		 
 		 if (!homelessPage.isEmpty())
 		 logger.info("homeless person successfully found!");

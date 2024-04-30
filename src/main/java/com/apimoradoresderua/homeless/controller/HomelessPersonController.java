@@ -35,10 +35,11 @@ public class HomelessPersonController {
 	    @RequestParam(required = true, name = "size") Optional<Integer> size, 
 	    @RequestParam(required = true, name = "currentSituation") Optional<String> currentSituation,
 	    @RequestParam(required = true, name = "ageGreaterThan") Optional<Integer> age, 
-	    @RequestParam(required = true, name = "ageBetween") Optional<List<Integer>> ageBetween){
+	    @RequestParam(required = true, name = "ageBetween") Optional<List<Integer>> ageBetween,
+	    @RequestParam(required = true, name = "ageInList") Optional<List<Integer>> ageInList){
 		
 		return ResponseEntity.ok(homelessModelMaper.entityPageToDtoPage(homelessService.
-		findALLHomeless(partName, page, size, currentSituation, age, ageBetween)));
+		findALLHomeless(partName, page, size, currentSituation, age, ageBetween, ageInList)));
 	}
 	
 	@PostMapping

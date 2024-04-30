@@ -1,5 +1,9 @@
 package com.apimoradoresderua.homeless.dto;
 
+import java.util.List;
+
+import com.apimoradoresderua.homeless.entity.ParentsTelephone;
+
 public class HomelessPersonDto {
 	
 	private String name;
@@ -7,6 +11,8 @@ public class HomelessPersonDto {
     private String currentSituation;
 	
 	private String addressWhereYouAre;
+	
+	private List<ParentsTelephone> parentsTelephones;
 	
 	private int age;
 	
@@ -40,5 +46,12 @@ public class HomelessPersonDto {
 	public void setAddressWhereYouAre(String addressWhereYouAre) {
 		this.addressWhereYouAre = addressWhereYouAre;
 	}
-
+	
+	public List<ParentsTelephone> getParentsTelephones() {
+		return parentsTelephones;
+	}
+	
+	public void setParentsTelephones(List<ParentsTelephone> parentsTelephones) {
+		this.parentsTelephones = parentsTelephones;
+	}
 }
