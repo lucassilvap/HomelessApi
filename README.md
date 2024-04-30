@@ -14,3 +14,5 @@ http://localhost:8084/1
 GET
 http://localhost:8084?name=jose
 ======================================================
+Para logar no banco de dados h2 em memoria siga esse link
+http://localhost:8084/h2
