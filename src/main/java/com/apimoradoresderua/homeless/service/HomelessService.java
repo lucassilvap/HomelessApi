@@ -53,7 +53,7 @@ public class HomelessService {
 	     return homelessPage;
 	 }
 	 
-	 public void ageBetweenIsValid(Optional<List<Integer>> ageOptional) {
+	 private void ageBetweenIsValid(Optional<List<Integer>> ageOptional) {
 			if(ageOptional.isPresent()) {
 				if (ageOptional.get().size() == 2) {
 			        return; 		
