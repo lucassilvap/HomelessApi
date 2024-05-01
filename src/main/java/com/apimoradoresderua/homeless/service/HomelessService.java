@@ -57,6 +57,7 @@ public class HomelessService {
 	 private void ageBetweenIsValid(Optional<List<Integer>> ageOptional) {
 			if(ageOptional.isPresent()) {
 				if (ageOptional.get().size() == 2) {
+					logger.info("validation in ageBetween sucessfully");
 			        return; 		
 				}else {
 					throw new AgeBetwennMustBeWithTwotFoundException();
@@ -71,5 +72,11 @@ public class HomelessService {
 	public void delete(Long id) {
 		HomelessPersonEntity homeOptional = findById(id);
 		homelessRepository.delete(homeOptional);
+	}
+
+	public HomelessPersonEntity update(Long id, HomelessPersonEntity entityUpdate) {
+		HomelessPersonEntity homelessPersonEntity = findById(id);
+		entityUpdate.setId(homelessPersonEntity.getId());
+		return homelessRepository.save(entityUpdate);
 	}
 }
