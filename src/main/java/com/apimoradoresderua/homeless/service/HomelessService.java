@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import com.apimoradoresderua.homeless.entity.HomelessPersonEntity;
@@ -62,4 +63,13 @@ public class HomelessService {
 				}
 			}
 	 }
+
+	public List<HomelessPersonEntity> findALLHomelessDefault() {
+		return homelessRepository.findAll(Specification.where(null));
+	}
+
+	public void delete(Long id) {
+		HomelessPersonEntity homeOptional = findById(id);
+		homelessRepository.delete(homeOptional);
+	}
 }

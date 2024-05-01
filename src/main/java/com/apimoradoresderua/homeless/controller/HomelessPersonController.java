@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +24,11 @@ public class HomelessPersonController {
 	
 	@Autowired
 	private HomelessService homelessService; 
+	
+	@GetMapping("/all")
+	public ResponseEntity<?> findAll(){
+		  return ResponseEntity.ok(homelessService.findALLHomelessDefault());
+	}
 	
 	@GetMapping("{id}")
 	public ResponseEntity<?> findById(@PathVariable(name = "id") Long id){
@@ -48,4 +54,12 @@ public class HomelessPersonController {
 		HomelessPersonDto dtoHomeless = homelessModelMaper.entityToDtoPerson(homelessService.save(entity));
 		return ResponseEntity.ok(dtoHomeless);
 	}
+	
+	@DeleteMapping("{id}")
+	public ResponseEntity<?> deleteById(@PathVariable(name = "id") Long id){
+		homelessService.delete(id);
+		return ResponseEntity.ok("successfully removed");
+	}
+	
 }
+	

@@ -1,5 +1,6 @@
 package com.apimoradoresderua.homeless.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -8,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.PrePersist;
 
 @Entity
 public class HomelessPersonEntity {
@@ -16,8 +18,8 @@ public class HomelessPersonEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<ParentsTelephone> parentsTelephones;
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	private List<ParentsTelephone> parentsTelephones = new ArrayList<ParentsTelephone>();
 	
 	private String name;
 	
@@ -71,5 +73,10 @@ public class HomelessPersonEntity {
 	
 	public void setParentsTelephones(List<ParentsTelephone> parentsTelephones) {
 		this.parentsTelephones = parentsTelephones;
+	}
+	
+	@PrePersist
+	public void prePersistBidirecional() {
+		parentsTelephones.forEach(t -> t.setHomelessPersonEntity(this));
 	}
 }
